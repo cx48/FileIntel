@@ -51,27 +51,27 @@ A lightweight Python-based CLI tool to extract metadata from files like `.pdf`, 
 
 ## Usage
 
-### Scan a single file
+#### Scan a single file
 ```bash
 python fileintel.py file.docx
 ```
 
-### Scan all files in a folder
+#### Scan all files in a folder
 ```bash
 python fileintel.py ./documents/
 ```
 
-### Output HTML report
+#### Output HTML report
 ```bash
 python fileintel.py file.pdf --html
 ```
 
-### Output JSON report
+#### Output JSON report
 ```bash
 python fileintel.py image.jpg --json
 ```
 
-### Save both HTML and JSON
+#### Save both HTML and JSON
 ```bash
 python fileintel.py report.pdf --all
 ```
