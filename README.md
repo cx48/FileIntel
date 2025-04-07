@@ -73,7 +73,7 @@ python fileintel.py image.jpg --json
 
 #### Save both HTML and JSON
 ```bash
-python fileintel.py report.pdf --all
+python fileintel.py file.pdf --all
 ```
 
 > All reports are saved inside a `report/` folder with subdirectories per file.
