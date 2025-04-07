@@ -8,7 +8,7 @@ from pathlib import Path
 import argparse
 
 def pretty_print(data, title):
-    print(f"\n{'='*40}\n📄 {title} Metadata\n{'='*40}")
+    print(f"\n{'='*40}\n {title} Metadata\n{'='*40}")
     for key, value in data.items():
         print(f"\033[1m{key:20}\033[0m : {value}")
 
@@ -22,7 +22,7 @@ def extract_with_exiftool(file_path):
                     key, value = line.split(":", 1)
                     metadata[key.strip()] = value.strip()
     except Exception as e:
-        print(f"❌ Failed to run exiftool: {e}")
+        print(f"Failed to run exiftool: {e}")
     return metadata
 
 def extract_docx_metadata(file_path):
@@ -94,13 +94,13 @@ def save_html_report(metadata, filename, output_dir):
 
     with open(filepath, "w", encoding="utf-8") as f:
         f.write(html)
-    print(f"💾 Saved HTML report: {filepath}")
+    print(f"Saved HTML report: {filepath}")
 
 def save_json_report(metadata, filename, output_dir):
     filepath = output_dir / f"{Path(filename).stem}.json"
     with open(filepath, "w", encoding="utf-8") as f:
         json.dump(metadata, f, indent=4)
-    print(f"💾 Saved JSON report: {filepath}")
+    print(f"Saved JSON report: {filepath}")
 
 def process_file(file_path, html=False, json_out=False, all_out=False, base_output_dir=Path(".")):
     ext = Path(file_path).suffix.lower()
@@ -143,7 +143,7 @@ def main():
             if item.is_file():
                 process_file(item, args.html, args.json, args.all, output_dir)
     else:
-        print("❌ Invalid path.")
+        print("Invalid path")
 
 if __name__ == "__main__":
     main()
