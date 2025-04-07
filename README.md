@@ -2,13 +2,9 @@
 
 A lightweight Python-based CLI tool to extract metadata from files like `.pdf`, `.docx`, images, and more. Supports output in both **JSON** and **HTML** formats.
 
----
-
-### Add screenshots
+### Demo
 
 ![Report Screenshot](assets/demo.png)
-
----
 
 ## Installation
 
@@ -53,8 +49,6 @@ A lightweight Python-based CLI tool to extract metadata from files like `.pdf`, 
 
    > If `exiftool` isn't installed, image and certain file types will not yield full metadata.
 
----
-
 ## Usage
 
 ### Scan a single file
@@ -84,16 +78,12 @@ python fileintel.py report.pdf --all
 
 > All reports are saved inside a `report/` folder with subdirectories per file.
 
----
-
 ## Supported File Types
 
 - `.docx` (Word Documents)
 - `.pdf` (PDF Documents)
 - `.jpg`, `.png`, `.jpeg`, `.tiff`, `.gif` (via `exiftool`)
 - Other formats supported by `exiftool`
-
----
 
 ## License
 
