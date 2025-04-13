@@ -1,6 +1,6 @@
 # FileIntel
 
-A lightweight Python-based CLI tool to extract metadata from files like `.pdf`, `.docx`, images, and more. Supports output in both **JSON** and **HTML** formats.
+A lightweight Python-based CLI tool to extract metadata from files like `.pdf`, `.docx`, images, and more. This tool can also generate a folium map or gmap link using exact coordinates and supports output in both **JSON** and **HTML** formats.
 
 ### Demo
 
@@ -61,6 +61,18 @@ python fileintel.py file.docx
 python fileintel.py ./documents/
 ```
 
+#### Generates a offline folium map
+
+```bash
+python fileintel.py file.jpg --map
+```
+
+#### Creates a gmap link using exact coordinates
+
+```bash
+python fileintel.py file.jpg --gmaps
+```
+
 #### Output HTML report
 ```bash
 python fileintel.py file.pdf --html
@@ -71,7 +83,7 @@ python fileintel.py file.pdf --html
 python fileintel.py image.jpg --json
 ```
 
-#### Save both HTML and JSON
+#### Generate all reports, hashes, and maps
 ```bash
 python fileintel.py file.pdf --all
 ```
@@ -82,7 +94,8 @@ python fileintel.py file.pdf --all
 
 - `.docx` (Word Documents)
 - `.pdf` (PDF Documents)
-- `.jpg`, `.png`, `.jpeg`, `.tiff`, `.gif` (via `exiftool`)
+- `.jpg`, `.jpeg`, `.png`, `.tiff`, `.heic`
+- `.mp4`, `.mov`, `.3gp`, `.arw`, `.cr2`, `.dng`, etc
 - Other formats supported by `exiftool`
 
 ## License
