@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Metadata Report</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button class="toggle-btn" onclick="toggleTheme()">Toggle Theme</button>
+    <div class="container">
+        <h2>Metadata Report for {{FILENAME}}</h2>
+        <input type="text" id="search" placeholder="Search metadata..." />
+        <p><em>Generated on {{DATE}}</em></p>
+        {{METADATA_BLOCK}}
+        <h2>Timeline</h2>
+        <div class="timeline">
+        {{TIMELINE_BLOCK}}
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
