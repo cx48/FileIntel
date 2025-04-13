@@ -67,7 +67,7 @@ python fileintel.py ./documents/
 python fileintel.py file.jpg --map
 ```
 
-#### Creates a gmap link using exact coordinates
+#### Create a gmap link using exact coordinates
 
 ```bash
 python fileintel.py file.jpg --gmaps
