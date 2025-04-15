@@ -10,8 +10,8 @@ A lightweight Python-based CLI tool to extract metadata from files like `.pdf`, 
 
 1. **Clone the repo** (or copy the script)
    ```bash
-   git clone https://github.com/cx48/fileintel
-   cd fileintel
+   git clone https://github.com/cx48/FileIntel
+   cd FileIntel
    ```
 
 2. **Create a virtual environment** (recommended)
